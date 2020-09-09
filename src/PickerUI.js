@@ -49,7 +49,7 @@ export default class PickerUI extends React.Component {
                 <div className="ranges" />
                 <div className="drp-buttons">
                     <span className="drp-selected">{this.dateLabel()}</span>
-                    <button className="cancelBtn btn btn-sm btn-default" type="button">
+                    <button onClick={this.props.onCancel} className="cancelBtn btn btn-sm btn-default" type="button">
                         Cancel
           </button>
                     <button className="applyBtn btn btn-sm btn-primary" type="button" onClick={this.onApply}>
